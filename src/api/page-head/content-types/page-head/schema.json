@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_heads",
+  "info": {
+    "singularName": "page-head",
+    "pluralName": "page-heads",
+    "displayName": "PAGE_HEAD"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "pagehead": {
+      "type": "json"
+    }
+  }
+}

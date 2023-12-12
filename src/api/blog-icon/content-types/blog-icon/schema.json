@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blog_icons",
+  "info": {
+    "singularName": "blog-icon",
+    "pluralName": "blog-icons",
+    "displayName": "BlogIcon"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "BlogIcons": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clients_lists",
+  "info": {
+    "singularName": "clients-list",
+    "pluralName": "clients-lists",
+    "displayName": "CLIENTS_LIST"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "clientslist": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "home_services",
+  "info": {
+    "singularName": "home-service",
+    "pluralName": "home-services",
+    "displayName": "HOME_SERVICE"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "homeservice": {
+      "type": "json"
+    }
+  }
+}

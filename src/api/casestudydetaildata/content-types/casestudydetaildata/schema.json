@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "casestudydetailsdata",
+  "info": {
+    "singularName": "casestudydetaildata",
+    "pluralName": "casestudydetailsdata",
+    "displayName": "casestudydetaildata",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "caseStudyDetail": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "social_icons",
+  "info": {
+    "singularName": "social-icon",
+    "pluralName": "social-icons",
+    "displayName": "SocialIcon"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SocialIcons": {
+      "type": "json"
+    }
+  }
+}

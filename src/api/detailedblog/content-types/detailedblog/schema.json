@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "detailedblogs",
+  "info": {
+    "singularName": "detailedblog",
+    "pluralName": "detailedblogs",
+    "displayName": "BlogDetailsData",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "detailedblog": {
+      "type": "json"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "news_letter_details_data",
+  "info": {
+    "singularName": "news-letter-detail-data",
+    "pluralName": "news-letter-details-data",
+    "displayName": "NewsLetterDetailData"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "newsLetterdetailsdata": {
+      "type": "json"
+    }
+  }
+}

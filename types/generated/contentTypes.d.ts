@@ -677,36 +677,6 @@ export interface PluginI18NLocale extends Schema.CollectionType {
   };
 }
 
-export interface ApiAdvisorDataAdvisorData extends Schema.CollectionType {
-  collectionName: 'advisor_datas';
-  info: {
-    singularName: 'advisor-data';
-    pluralName: 'advisor-datas';
-    displayName: 'advisorData';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    advisorsData: Attribute.JSON;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::advisor-data.advisor-data',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::advisor-data.advisor-data',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface ApiBlogBlog extends Schema.CollectionType {
   collectionName: 'blogs';
   info: {
@@ -725,36 +695,6 @@ export interface ApiBlogBlog extends Schema.CollectionType {
     createdBy: Attribute.Relation<'api::blog.blog', 'oneToOne', 'admin::user'> &
       Attribute.Private;
     updatedBy: Attribute.Relation<'api::blog.blog', 'oneToOne', 'admin::user'> &
-      Attribute.Private;
-  };
-}
-
-export interface ApiBlogIconBlogIcon extends Schema.CollectionType {
-  collectionName: 'blog_icons';
-  info: {
-    singularName: 'blog-icon';
-    pluralName: 'blog-icons';
-    displayName: 'BlogIcon';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    BlogIcons: Attribute.JSON;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::blog-icon.blog-icon',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::blog-icon.blog-icon',
-      'oneToOne',
-      'admin::user'
-    > &
       Attribute.Private;
   };
 }
@@ -821,36 +761,6 @@ export interface ApiCasestudydetaildataCasestudydetaildata
   };
 }
 
-export interface ApiClientsListClientsList extends Schema.CollectionType {
-  collectionName: 'clients_lists';
-  info: {
-    singularName: 'clients-list';
-    pluralName: 'clients-lists';
-    displayName: 'CLIENTS_LIST';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    clientslist: Attribute.JSON;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::clients-list.clients-list',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::clients-list.clients-list',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface ApiDetailedblogDetailedblog extends Schema.CollectionType {
   collectionName: 'detailedblogs';
   info: {
@@ -882,248 +792,6 @@ export interface ApiDetailedblogDetailedblog extends Schema.CollectionType {
   };
 }
 
-export interface ApiHomeServiceHomeService extends Schema.CollectionType {
-  collectionName: 'home_services';
-  info: {
-    singularName: 'home-service';
-    pluralName: 'home-services';
-    displayName: 'HOME_SERVICE';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    homeservice: Attribute.JSON;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::home-service.home-service',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::home-service.home-service',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiNewsLetterNewsLetter extends Schema.CollectionType {
-  collectionName: 'news_letters';
-  info: {
-    singularName: 'news-letter';
-    pluralName: 'news-letters';
-    displayName: 'NewsLetter';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    NewsLetters: Attribute.JSON;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::news-letter.news-letter',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::news-letter.news-letter',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiNewsLetterDetailDataNewsLetterDetailData
-  extends Schema.CollectionType {
-  collectionName: 'news_letter_details_data';
-  info: {
-    singularName: 'news-letter-detail-data';
-    pluralName: 'news-letter-details-data';
-    displayName: 'NewsLetterDetailData';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    newsLetterdetailsdata: Attribute.JSON;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::news-letter-detail-data.news-letter-detail-data',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::news-letter-detail-data.news-letter-detail-data',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiOurserviceOurservice extends Schema.CollectionType {
-  collectionName: 'ourservices';
-  info: {
-    singularName: 'ourservice';
-    pluralName: 'ourservices';
-    displayName: 'SERVICES_INFO';
-    description: '';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    ourservices: Attribute.JSON;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::ourservice.ourservice',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::ourservice.ourservice',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiPageHeadPageHead extends Schema.CollectionType {
-  collectionName: 'page_heads';
-  info: {
-    singularName: 'page-head';
-    pluralName: 'page-heads';
-    displayName: 'PAGE_HEAD';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    pagehead: Attribute.JSON;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::page-head.page-head',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::page-head.page-head',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiSocialIconSocialIcon extends Schema.CollectionType {
-  collectionName: 'social_icons';
-  info: {
-    singularName: 'social-icon';
-    pluralName: 'social-icons';
-    displayName: 'SocialIcon';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    SocialIcons: Attribute.JSON;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::social-icon.social-icon',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::social-icon.social-icon',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiTakeActionTakeAction extends Schema.CollectionType {
-  collectionName: 'take_actions';
-  info: {
-    singularName: 'take-action';
-    pluralName: 'take-actions';
-    displayName: 'TAKE_ACTION';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    takeaction: Attribute.JSON;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::take-action.take-action',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::take-action.take-action',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
-export interface ApiTalentInfoTalentInfo extends Schema.CollectionType {
-  collectionName: 'talent_infos';
-  info: {
-    singularName: 'talent-info';
-    pluralName: 'talent-infos';
-    displayName: 'TALENT_INFO';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    talentinfo: Attribute.JSON;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::talent-info.talent-info',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::talent-info.talent-info',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -1140,21 +808,10 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'plugin::i18n.locale': PluginI18NLocale;
-      'api::advisor-data.advisor-data': ApiAdvisorDataAdvisorData;
       'api::blog.blog': ApiBlogBlog;
-      'api::blog-icon.blog-icon': ApiBlogIconBlogIcon;
       'api::casestudy.casestudy': ApiCasestudyCasestudy;
       'api::casestudydetaildata.casestudydetaildata': ApiCasestudydetaildataCasestudydetaildata;
-      'api::clients-list.clients-list': ApiClientsListClientsList;
       'api::detailedblog.detailedblog': ApiDetailedblogDetailedblog;
-      'api::home-service.home-service': ApiHomeServiceHomeService;
-      'api::news-letter.news-letter': ApiNewsLetterNewsLetter;
-      'api::news-letter-detail-data.news-letter-detail-data': ApiNewsLetterDetailDataNewsLetterDetailData;
-      'api::ourservice.ourservice': ApiOurserviceOurservice;
-      'api::page-head.page-head': ApiPageHeadPageHead;
-      'api::social-icon.social-icon': ApiSocialIconSocialIcon;
-      'api::take-action.take-action': ApiTakeActionTakeAction;
-      'api::talent-info.talent-info': ApiTalentInfoTalentInfo;
     }
   }
 }

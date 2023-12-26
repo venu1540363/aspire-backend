@@ -792,6 +792,36 @@ export interface ApiDetailedblogDetailedblog extends Schema.CollectionType {
   };
 }
 
+export interface ApiImageImage extends Schema.CollectionType {
+  collectionName: 'images';
+  info: {
+    singularName: 'image';
+    pluralName: 'images';
+    displayName: 'image';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    blogimage: Attribute.Media;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::image.image',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::image.image',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+  };
+}
+
 declare module '@strapi/types' {
   export module Shared {
     export interface ContentTypes {
@@ -812,6 +842,7 @@ declare module '@strapi/types' {
       'api::casestudy.casestudy': ApiCasestudyCasestudy;
       'api::casestudydetaildata.casestudydetaildata': ApiCasestudydetaildataCasestudydetaildata;
       'api::detailedblog.detailedblog': ApiDetailedblogDetailedblog;
+      'api::image.image': ApiImageImage;
     }
   }
 }
